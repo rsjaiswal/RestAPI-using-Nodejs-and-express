@@ -1,0 +1,23 @@
+Routing refers to determing how an application responds to a client request to a particular endpoint, which is a URI(or path) and a specific HTTP request method ( GET, POST, and so on).
+
+app.METHOD(PATH, HANDLER)
+
+where:
+
+1. app is an instance of express.
+2. METHOD is an HTTP request method, in lowercase.
+3. PATH is a path on the server.
+4. HANDLER is the function executed when the route is matched.
+
+e.g. 
+
+app.get('/', (req, res)=>{
+      res.send('Hello world')
+})
+
+
+
+Serving static files in Express
+
+express.static(root, [options])
+
